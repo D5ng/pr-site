@@ -1,0 +1,23 @@
+@import url("./common/reset.css");
+@import url("./common/header.css");
+@import url("./home/style.css");
+@import url("./about/style.css");
+@import url("./curriculum/style.css");
+@import url("./target/style.css");
+
+body {
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  background-color: #ffbaba;
+  position: relative;
+}
+
+.transition {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}

@@ -1,0 +1,98 @@
+@import url("../common/reset.css");
+@import url("../common/header.css");
+
+header {
+  color: #fff3b4;
+}
+
+main[data-barba-namespace="about"] .hidden-wrapper {
+  width: max-content;
+  overflow: hidden;
+}
+
+main[data-barba-namespace="about"] .hidden-wrapper * {
+  position: relative;
+}
+
+main[data-barba-namespace="about"] .hidden-wrapper *:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a73121;
+}
+
+main[data-barba-namespace="about"].active .hidden-wrapper *:after {
+  transition: 1s cubic-bezier(1, 0.03, 0.25, 1);
+  left: 100%;
+}
+
+main[data-barba-namespace="about"] {
+  margin: 0 auto;
+}
+
+.profile {
+  margin-top: 50px;
+}
+
+main[data-barba-namespace="about"] section {
+  padding-bottom: 50px;
+  opacity: 0;
+  position: relative;
+}
+
+main[data-barba-namespace="about"] section:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #a73121;
+}
+
+main[data-barba-namespace="about"].active section:after {
+  width: 100%;
+  transition: 1s cubic-bezier(1, 0.03, 0.25, 1);
+}
+
+main[data-barba-namespace="about"] section + section {
+  margin-top: 50px;
+}
+
+main[data-barba-namespace="about"].container h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #fff3b4;
+}
+
+main[data-barba-namespace="about"].container li {
+  font-size: 16px;
+}
+
+main[data-barba-namespace="about"].container li + li {
+  margin-top: 10px;
+}
+
+main[data-barba-namespace="about"] li h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #fff3b4;
+}
+
+main[data-barba-namespace="about"] li p {
+  line-height: 2;
+  color: #f2e8c6;
+}
+
+main[data-barba-namespace="about"] li + li {
+  margin-top: 30px;
+}
+
+main[data-barba-namespace="about"] .education ul li + li {
+  margin-top: 30px;
+}

@@ -1,0 +1,45 @@
+.header {
+  height: 70px;
+  position: relative;
+  z-index: 10;
+  transition: color 1s cubic-bezier(1, 0.03, 0.25, 1);
+}
+
+.header .container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo a {
+  display: block;
+  line-height: 70px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav ul li {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.header-nav ul li a {
+  display: block;
+  line-height: 70px;
+}
+
+.header-nav ul li + li {
+  margin-left: 20px;
+}
+
+/* Animation */
+.header h1,
+.header nav li {
+  overflow: hidden;
+}
