@@ -4,6 +4,7 @@
 @import url("./about/style.css");
 @import url("./curriculum/style.css");
 @import url("./target/style.css");
+@import url("./qna/style.css");
 
 body {
   /* height: 100vh; */

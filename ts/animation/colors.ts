@@ -7,6 +7,7 @@ const backgroundMapping: ColorMapping = {
   about: "#952323",
   curriculum: "#352F44",
   target: "#241468",
+  qna: "#FFBB5C",
 }
 
 const menuMapping: ColorMapping = {
@@ -14,6 +15,7 @@ const menuMapping: ColorMapping = {
   about: "#fff3b4",
   curriculum: "#B9B4C7",
   target: "#ea1179",
+  qna: "#e25e3e",
 }
 
 export const getBackgroundColor = (namespace: string) => backgroundMapping[namespace]

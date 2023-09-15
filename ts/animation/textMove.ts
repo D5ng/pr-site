@@ -1,5 +1,3 @@
-import { ITransitionData } from "@barba/core"
-
 type HeadingElement = HTMLHeadElement
 
 let speed: number = -window.innerWidth * 0.9
