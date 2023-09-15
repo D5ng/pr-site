@@ -7,6 +7,7 @@ const barbaNamespaceMapping: NamespaceMapping = {
   about: (element) => sectionTransition(element),
   curriculum: (element) => sectionTransition(element),
   target: (element) => sectionTransition(element),
+  qna: (element) => sectionTransition(element),
 }
 
 const tl = gsap.timeline()

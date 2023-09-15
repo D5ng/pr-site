@@ -14,7 +14,6 @@ barba.init({
       name: "default-transition",
       once(data) {
         onceTransition(data)
-        console.log("?")
       },
 
       async leave(data) {
